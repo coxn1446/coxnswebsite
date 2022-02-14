@@ -1,0 +1,38 @@
+@media (min-width:320px){
+
+    .itemBContainerProjects {
+        grid-column: 1 / span 7;
+        grid-row: span 6;
+    }
+}
+
+@media (min-width:600px){
+
+    .itemBContainerProjects {
+        grid-column: 1 / span 12;
+        grid-row: span 6;
+    }
+}
+
+@media (min-width:1026px){
+
+    .itemBContainerProjects {
+        grid-column: 1 / span 12;
+        grid-row: span 6;
+    }
+
+    .projectsLink {
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;    
+        font-size: 2em;
+        font-weight: bold;
+        display: block;
+        margin-top: 5px;
+    }
+
+    .projectsParagraph {
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;    
+        font-size: 1em;
+        margin-top: 3px;
+
+    }
+}
