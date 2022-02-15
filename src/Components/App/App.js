@@ -5,6 +5,7 @@ import Projects from "../Projects/Projects"
   import MixedMessages from "../Projects/MixedMessages/MixedMessages"
     import MixedMessagesMadLib from '../Projects/MixedMessages/MixedMessagesMadLib';
   import GridTemplate from "../Projects/GridTemplate/GridTemplate"
+  import OpenWeather from "../Projects/OpenWeather/OpenWeather"
 import Contact from "../Contact/Contact"
 import Nav from "../Nav/Nav"
 import {Routes, Route} from "react-router-dom"
@@ -82,6 +83,12 @@ function App() {
         <Route
           path="projects/Grid-Template"
           element={<GridTemplate
+            changeTitle={changeTitle}
+          />}
+        />
+        <Route
+          path="projects/Open-Weather"
+          element={<OpenWeather
             changeTitle={changeTitle}
           />}
         />

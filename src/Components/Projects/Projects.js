@@ -11,14 +11,14 @@ function Projects(props) {
     <div className="itemBContainerProjects" id="itemBContainerProjects">
         <Link to="Mixed-Messages" className="projectsLink">Mixed Messages</Link>
         <p className="projectsParagraph">
-            I have used basic HTML forms to create an interactive Mad Lib.
+            An interactive mad lib using basic HTML forms.
         </p>
         <Link to="Grid-Template" className="projectsLink">Grid Template</Link>
         <p className="projectsParagraph">
-            Used CSS Grid to create a better web page layout. I have a few media queries too so this page should resize depending on the size of your browser.
+            CSS Grid can create a better web page layout. I have a few media queries too so this page should resize depending on the size of your browser.
         </p>
-        <h1><a href="https://coxn1446.github.io/HTML/OpenWeatherAPIProject.html">Open Weather API</a></h1>
-        <p>
+        <Link to="Open-Weather" className="projectsLink">Open Weather</Link>
+        <p className="projectsParagraph">
             Called a 3rd party API and displayed its info on a webpage. This tool searches for current weather in any US city.
         </p>
         <h1><a href="https://coxnisjamming.surge.sh/">React Jamming</a></h1>

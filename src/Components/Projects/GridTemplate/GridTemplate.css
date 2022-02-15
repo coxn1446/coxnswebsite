@@ -164,7 +164,7 @@
         border: 3px solid black;
     }
     
-    input[type="submit"] {
+   #submitButtonGridTemplate {
         width: 50%;
         margin: auto;
         height: 50px;
@@ -354,7 +354,7 @@
         border: 3px solid black;
     }
     
-    input[type="submit"] {
+    #submitButtonGridTemplate {
         width: 25%;
         margin: auto;
         
@@ -422,7 +422,6 @@
 .itemFContainerGridTemplate {
     grid-column: 1 / span 12;
     grid-row: 4 / span 5;
-    background-color: rosybrown;
     display: grid;
     grid-template-columns: repeat(8,1fr);
     grid-template-rows: repeat(12,1fr);
@@ -523,9 +522,6 @@
     text-align:center;
 }
 
-.itemJAGridTemplate {
-    display:block;
-}
 
 textarea {
     width:100%;
@@ -536,14 +532,13 @@ textarea:focus {
     border: 3px solid black;
 }
 
-input[type="submit"] {
+#submitButtonGridTemplate {
     width: 25%;
     margin: auto;
     
 }
 
 .itemJBGridTemplate {
-    display:none;
     font-size:24px;
 }
 

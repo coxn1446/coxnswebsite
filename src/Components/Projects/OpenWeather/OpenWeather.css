@@ -1,0 +1,293 @@
+  @media (min-width:320px){
+    .openWeatherContainer {
+        grid-column: 1 / span 7;
+        grid-template-columns: repeat(7, 1fr);
+        display:grid;
+    }
+     
+     .itemBContainerOpenWeather {
+         grid-column: 1 / span 7;
+         grid-row: span 1;
+         display: flex;
+         justify-content: center;
+     }
+
+    .OpenWeatherLogo {
+         height: 100%;
+         width: 150px;
+     }
+     
+     .itemCContainerOpenWeather {
+             grid-column: 1 / span 7;
+             grid-row: span 2;
+             display:grid;
+             grid-template-columns: repeat(12, 1fr);
+             grid-template-rows: repeat(6,1fr);
+             grid-template-areas: none;
+     
+     }
+     
+     #formOpenWeather {
+         grid-column: 1 / span 12;
+         grid-row: 1 / span 6;
+         display: grid;
+         grid-template-columns: repeat(12, 1fr);
+         grid-template-rows: repeat(6,1fr);
+     
+     }
+     
+     .itemCAOpenWeather {
+         grid-column: 1 / span 9;
+         grid-row: 1 / span 2;
+     
+     }
+     
+     .itemCBOpenWeather {
+         grid-column: 10 / span 3;
+         grid-row: 1 / span 2;
+     
+     }
+     
+     .itemCCOpenWeather {
+         grid-column: 3 / span 8;
+         grid-row: 4 / span 2;
+     
+     }
+     
+     #city, #state, #submit {
+         width: 95%;
+         height: 95%;
+         text-align: center;
+     }
+     
+     .itemDContainerOpenWeather {
+         grid-column: 1 / span 7;
+         grid-row: span 3;
+         display: none;
+         grid-template-columns: repeat(12, 1fr);
+         grid-template-rows: repeat(9,1fr);
+         border:2px solid black;
+     
+     }
+     
+     .itemDAOpenWeather{
+         grid-column: 1 / span 12;
+         grid-row: 1 / span 2;
+         text-align: center;
+         font-size: 24px;
+         font-family: fantasy;
+         margin: 5px;
+     
+     }
+
+     .itemDBOpenWeather{
+         grid-column: 1 / span 6;
+         grid-row: 3 / span 6;
+         margin: 5px;
+     }
+
+     .itemDCOpenWeather{
+         grid-column: 7 / span 6;
+         grid-row: 3 / span 6;
+     }
+
+     #weatherImage {
+         height: 100%;
+         width: 100%;
+     }
+ 
+ }
+ 
+ @media (min-width:600px){
+
+    .openWeatherContainer {
+        grid-column: 1 / span 12;
+        grid-template-columns: repeat(12, 1fr);
+        display:grid;
+    }
+
+     
+     .itemBContainerOpenWeather {
+         grid-column: 1 / span 12;
+         grid-row: span 1;
+         display: flex;
+         justify-content: center;
+     }
+     
+     .itemCContainerOpenWeather {
+             grid-column: 1 / span 12;
+             grid-row: span 1;
+             display:grid;
+             grid-template-columns: repeat(12, 1fr);
+             grid-template-rows: repeat(6,1fr);
+             grid-template-areas: none;
+     
+     }
+     
+     #formOpenWeather {
+         grid-column: 4 / span 6;
+         grid-row: 1 / span 6;
+         display: grid;
+         grid-template-columns: repeat(12, 1fr);
+         grid-template-rows: repeat(6,1fr);
+     
+     }
+     
+     .itemCAOpenWeather {
+         grid-column: 1 / span 9;
+         grid-row: 1 / span 2;
+     
+     }
+     
+     .itemCBOpenWeather {
+         grid-column: 10 / span 3;
+         grid-row: 1 / span 2;
+     
+     }
+     
+     .itemCCOpenWeather {
+         grid-column: 4 / span 6;
+         grid-row: 4 / span 2;
+     
+     }
+     
+     #city, #state, #submit {
+         width: 95%;
+         height: 95%;
+         text-align: center;
+     }
+     
+     .itemDContainerOpenWeather {
+         grid-column: 3 / span 8;
+         grid-row: span 3;
+         display: none;
+         grid-template-columns: repeat(12, 1fr);
+         grid-template-rows: repeat(8,1fr);
+         border:2px solid black;
+     
+     }
+     
+     .itemDAOpenWeather{
+         grid-column: 1 / span 12;
+         grid-row: 1 / span 2;
+         text-align: center;
+         font-size: 24px;
+         font-family: fantasy;
+         margin: 5px;
+     
+     }
+     .itemDBOpenWeather{
+         grid-column: 1 / span 6;
+         grid-row: 3 / span 6;
+         margin: 5px;
+     }
+     .itemDCOpenWeather{
+         grid-column: 7 / span 6;
+         grid-row: 3 / span 6;
+         margin:5px;
+     
+     }
+
+     #weatherImage {
+        height: 100%;
+        width: 100%;
+    }
+ 
+ }
+ 
+ @media (min-width:1026px) {
+    .openWeatherContainer {
+        grid-column: 1 / span 12;
+        grid-template-columns: repeat(12, 1fr);
+        display:grid;
+    }
+
+ 
+    .itemBContainerOpenWeather {
+     grid-column: 1 / span 12;
+     grid-row: span 1;
+     display: flex;
+     justify-content: center;
+ }
+ 
+ .itemCContainerOpenWeather {
+         grid-column: 1 / span 12;
+         grid-row: span 1;
+         display:grid;
+         grid-template-columns: repeat(12, 1fr);
+         grid-template-rows: repeat(6,1fr);
+         grid-template-areas: none;
+ 
+ }
+ 
+ #formOpenWeather {
+     grid-column: 5 / span 4;
+     grid-row: 1 / span 6;
+     display: grid;
+     grid-template-columns: repeat(12, 1fr);
+     grid-template-rows: repeat(6,1fr);
+ 
+ }
+ 
+ .itemCAOpenWeather {
+     grid-column: 1 / span 9;
+     grid-row: 1 / span 2;
+ 
+ }
+ 
+ .itemCBOpenWeather {
+     grid-column: 10 / span 3;
+     grid-row: 1 / span 2;
+ 
+ }
+ 
+ .itemCCOpenWeather {
+     grid-column: 4 / span 6;
+     grid-row: 4 / span 2;
+ 
+ }
+ 
+ #city, #state, #submit {
+     width: 95%;
+     height: 95%;
+     text-align: center;
+ }
+ 
+ .itemDContainerOpenWeather {
+     grid-column: 1 / span 12;
+     grid-row: span 2;
+     display: none;
+     grid-template-columns: repeat(12, 1fr);
+     grid-template-rows: repeat(9,1fr);
+ 
+ }
+ 
+ .itemDAOpenWeather{
+     grid-column: 5 / span 4;
+     grid-row: 1 / span 2;
+     text-align: center;
+     font-size: 24px;
+     font-family: fantasy;
+     margin: 5px;
+     border: 2px solid black
+ 
+ }
+ .itemDBOpenWeather{
+     grid-column: 5 / span 2;
+     grid-row: 3 / span 6;
+     margin: 5px;
+ }
+ .itemDCOpenWeather{
+     grid-column: 7 / span 2;
+     grid-row: 3 / span 6;
+     margin:5px;
+ 
+ }
+
+ #weatherImage {
+    height: 100%;
+    width: 100%;
+}
+ 
+ 
+ }

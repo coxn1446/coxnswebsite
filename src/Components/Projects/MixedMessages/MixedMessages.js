@@ -29,7 +29,7 @@ function MixedMessages(props) {
                 <label for="word-3">Verb (present tense)</label>
                 <input id="word-3" type="text" name="word-3" required/>
                 <br></br>
-                <input type="submit" id="submit" value="Generate a Mad Lib" onClick={handleSubmit}/>
+                <input type="submit" id="submitMadLib" value="Generate a Mad Lib" onClick={handleSubmit}/>
             </form>
         </div>
     );
