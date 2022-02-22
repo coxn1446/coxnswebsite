@@ -18,7 +18,7 @@
     
     }
     
-    input {
+    #word-1,#word-2,#word-3 {
         width: 90%;
         margin: 0px 0px 8px;
     }
@@ -52,7 +52,7 @@
     
     }
     
-    input {
+    #word-1,#word-2,#word-3 {
         width: 90%;
         margin: 0px 0px 8px;
     }
@@ -84,16 +84,9 @@
     
     }
     
-    input {
+    #word-1,#word-2,#word-3 {
         width: 90%;
         margin: 0px 0px 8px;
-    }
-    
-    input[type=submit] {
-        background-color:black;
-        color: white;
-        font-size: 10px;
-        width: 100%;
     }
     
     #submitMadLib  {
