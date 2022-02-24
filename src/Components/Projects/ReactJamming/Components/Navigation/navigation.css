@@ -1,0 +1,40 @@
+h1 {
+    padding: .77rem 0;
+    background-color: #010c3f;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.88rem;
+    color: #fff;
+  }
+  
+  h1 .highlight {
+    color: #6c41ec;
+  }
+
+  .itemABContainer {
+      width: 100%;
+      display: flex;
+  }
+
+  .itemABA, .itemABB, .itemABC, .itemABD {
+    background-color: #010c3f;
+    color: whitesmoke;
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    flex-flow: wrap;
+    text-align: center;
+    padding: 5px;
+    margin: auto;
+  }
+
+  .itemABA :visited, .itemABB :visited, .itemABC :visited, .itemABD :visited {
+      color: #fff;
+  }
+
+  @media only screen and (min-width: 800px) {
+    .itemABContainer {
+      width: 75%;
+      display: flex;
+      margin: auto;
+  }
+    }

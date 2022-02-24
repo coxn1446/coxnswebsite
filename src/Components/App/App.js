@@ -1,14 +1,15 @@
 import './App.css';
-import Home from "../Home/Home"
-import About from "../About/About"
-import Projects from "../Projects/Projects"
-  import MixedMessages from "../Projects/MixedMessages/MixedMessages"
+import Home from "../Home/Home";
+import About from "../About/About";
+import Projects from "../Projects/Projects";
+  import MixedMessages from "../Projects/MixedMessages/MixedMessages";
     import MixedMessagesMadLib from '../Projects/MixedMessages/MixedMessagesMadLib';
-  import GridTemplate from "../Projects/GridTemplate/GridTemplate"
-  import OpenWeather from "../Projects/OpenWeather/OpenWeather"
-import Contact from "../Contact/Contact"
-import Nav from "../Nav/Nav"
-import {Routes, Route} from "react-router-dom"
+  import GridTemplate from "../Projects/GridTemplate/GridTemplate";
+  import OpenWeather from "../Projects/OpenWeather/OpenWeather";
+  import Jamming from "../Projects/ReactJamming/Components/App/JammingApp";
+import Contact from "../Contact/Contact";
+import Nav from "../Nav/Nav";
+import {Routes, Route} from "react-router-dom";
 import React, {useState} from 'react';
 
 
@@ -89,6 +90,12 @@ function App() {
         <Route
           path="projects/Open-Weather"
           element={<OpenWeather
+            changeTitle={changeTitle}
+          />}
+        />
+        <Route
+          path="projects/Jamming"
+          element={<Jamming
             changeTitle={changeTitle}
           />}
         />

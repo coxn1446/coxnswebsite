@@ -21,8 +21,8 @@ function Projects(props) {
         <p className="projectsParagraph">
             Called a 3rd party API and displayed its info on a webpage. This tool searches for current weather in any US city.
         </p>
-        <h1><a href="https://coxnisjamming.surge.sh/">React Jamming</a></h1>
-        <p>
+        <Link to="Jamming" className="projectsLink">React Jamming</Link>
+        <p className="projectsParagraph">
             A React.js app which calls the Spotify API to search for tracks and save them to a playlist. All styling was copied from a pre-fab template. This app was deployed by surge.sh through npm. Unfortunately, to make this app function properly I need to add your Spotify email to my app's database. So if you're actually interested in using this app, text me. Otherwise you'll just have to trust that it works exactly as I have intended it to.
         </p>
         <Link to="/" className="projectsLink">React Router</Link>
