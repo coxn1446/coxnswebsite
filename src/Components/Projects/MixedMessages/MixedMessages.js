@@ -1,16 +1,33 @@
 import './MixedMessages.css';
-import React, {useEffect} from 'react';
+import React, {useState, useEffect} from 'react';
+import {Link} from 'react-router-dom'
 import { createBrowserHistory } from "history";
 
 function MixedMessages(props) {
 
     const history = createBrowserHistory();
 
-    const handleSubmit = () => {
-        history.push(`Mixed-Messages-MadLib`);
-      };
+    const [wordOne, setWordOne] = useState('');
+    const handleWordOneChange = (e) => {
+        setWordOne(e.target.value)
+    }
 
-      useEffect(() => {
+    const [wordTwo, setWordTwo] = useState('');
+    const handleWordTwoChange = (e) => {
+        setWordTwo(e.target.value)
+    }
+
+    const [wordThree, setWordThree] = useState('');
+    const handleWordThreeChange = (e) => {
+        setWordThree(e.target.value)
+    }
+
+
+    const handleSubmit = () => {
+        history.push(`Mixed-Messages-MadLib?word-1=${wordOne}&word-2=${wordTwo}&word-3=${wordThree}`);
+    };
+
+    useEffect(() => {
         props.changeTitle(window.location.pathname)
     },[props])
 
@@ -21,15 +38,15 @@ function MixedMessages(props) {
             </p>
             <form method="get" className="madLib">
                 <label for="word-1">Noun (singular)</label>
-                <input id="word-1" type="text" name="word-1" required/>
+                <input id="word-1" type="text" name="word-1" onChange={handleWordOneChange} required/>
                 <br></br>
                 <label for="word-2">Adjective</label>
-                <input id="word-2" type="text" name="word-2" required/>
+                <input id="word-2" type="text" name="word-2" onChange={handleWordTwoChange} required/>
                 <br></br>
                 <label for="word-3">Verb (present tense)</label>
-                <input id="word-3" type="text" name="word-3" required/>
+                <input id="word-3" type="text" name="word-3" onChange={handleWordThreeChange} required/>
                 <br></br>
-                <input type="submit" id="submitMadLib" value="Generate a Mad Lib" onClick={handleSubmit}/>
+                <button id="submitMadLib" onClick={handleSubmit}><Link to="/projects/Mixed-Messages-MadLib">Submit Your MadLib</Link></button>
             </form>
         </div>
     );
