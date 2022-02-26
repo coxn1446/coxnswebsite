@@ -7,13 +7,11 @@
     }
 
     .madLib {
-        width: 50%;
         padding: 8px;
         background-color: rosybrown;
         position:relative;
         text-align: center;
         margin: auto;
-        top: 50px;
         border-radius: 5%;
     
     }
@@ -27,8 +25,6 @@
         background-color:black;
         color: white;
         font-size: 10px;
-        height: 50px;
-        width: 60%;
     }
 }
 
@@ -41,13 +37,11 @@
     }
 
     .madLib {
-        width: 50%;
         padding: 8px;
         background-color: rosybrown;
         position:relative;
         text-align: center;
         margin: auto;
-        top: 50px;
         border-radius: 5%;
     
     }
@@ -61,25 +55,33 @@
         background-color:black;
         color: white;
         font-size: 13px;
-        width: 40%;
     }
 }
 
 @media (min-width:1026px){ 
     .itemBContainerMadLib{
         grid-column: 1 / span 12;
-        grid-row: span 3;
+        grid-row: span 4;
         justify-content: center;
         text-align: center;
+        display:grid;
+        grid-template-columns: repeat(13, 1fr);
+        grid-template-rows: repeat(9,1fr);
+        grid-template-areas: none;
     }
+
+    #paragraphMadLib{
+        grid-column: 3 / span 9;
+        grid-row: 1 / span 1;
+    }
+
     .madLib {
+        grid-column: 4 / span 7;
+        grid-row: 2 / span 3;
         width: 50%;
-        padding: 8px;
         background-color: rosybrown;
         position:relative;
         text-align: center;
-        margin: auto;
-        top: 50px;
         border-radius: 5%;
     
     }
@@ -90,9 +92,10 @@
     }
     
     #submitMadLib  {
+        grid-column: 6 / span 3;
+        grid-row: 6 / span 1;
         background-color:black;
         color: white;
-        width: 40%;
         font-size: 16px;
     }
 }

@@ -34,9 +34,9 @@ function MixedMessages(props) {
     return (
         <div className="itemBContainerMadLib">
             <br></br>
-            <p>Please use the inputs belows to create your own Mad Lib. All three fields are required to produce an output.
+            <p id="paragraphMadLib">Please use the inputs belows to create your own Mad Lib. All three fields are required to produce an output.
             </p>
-            <form method="get" className="madLib">
+            <form className="madLib">
                 <label for="word-1">Noun (singular)</label>
                 <input id="word-1" type="text" name="word-1" onChange={handleWordOneChange} required/>
                 <br></br>
@@ -46,8 +46,8 @@ function MixedMessages(props) {
                 <label for="word-3">Verb (present tense)</label>
                 <input id="word-3" type="text" name="word-3" onChange={handleWordThreeChange} required/>
                 <br></br>
-                <button id="submitMadLib" onClick={handleSubmit}><Link to="/projects/Mixed-Messages-MadLib">Submit Your MadLib</Link></button>
             </form>
+            <button id="submitMadLib" onClick={handleSubmit}><Link to="/projects/Mixed-Messages-MadLib">Submit Your MadLib</Link></button>
         </div>
     );
 }
