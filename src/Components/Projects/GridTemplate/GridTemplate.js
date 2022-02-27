@@ -99,10 +99,10 @@ function GridTemplate(props) {
                     style={{display: itemJADisplayGridTemplate}}
                 >
                     <p>Tell me what you think of the website!</p>
-                    <form action="#itemJAGridTemplate" onSubmit={handleSubmitFormGridTemplate}>
+                    <form>
                         <textarea id="message" required rows="10" cols="50"></textarea>
-                        <input type="submit" value="Submit" id="submitButtonGridTemplate"/>
                     </form>
+                    <button onClick={handleSubmitFormGridTemplate} id="submitButtonGridTemplate">Submit</button>
                 </div>
                 <div
                     className="itemJBGridTemplate" id="itemJBGridTemplate"

@@ -22,28 +22,40 @@
     }
     
     #submitMadLib {
-        background-color:black;
+        background-color: gray;
         color: white;
-        font-size: 10px;
+        height: 45px;
+        margin: 10px;
+        font-size: 20px;
+        border-radius: 20px;
     }
 }
 
 @media (min-width:600px){
     .itemBContainerMadLib{
         grid-column: 1 / span 12;
-        grid-row: span 3;
+        grid-row: span 5;
         justify-content: center;
         text-align: center;
+        display:grid;
+        grid-template-columns: repeat(13, 1fr);
+        grid-template-rows: repeat(9,1fr);
+        grid-template-areas: none;
+    }
+
+    #paragraphMadLib{
+        grid-column: 3 / span 9;
+        grid-row: 1 / span 1;
     }
 
     .madLib {
-        padding: 8px;
+        grid-column: 3 / span 9;
+        grid-row: 2 / span 3;
+        width: 50%;
         background-color: rosybrown;
         position:relative;
         text-align: center;
-        margin: auto;
         border-radius: 5%;
-    
     }
     
     #word-1,#word-2,#word-3 {
@@ -52,9 +64,15 @@
     }
     
     #submitMadLib  {
-        background-color:black;
+        grid-column: 5 / span 5;
+        grid-row: 6 / span 1;
+        background-color: gray;
         color: white;
-        font-size: 13px;
+        height: 45px;
+        margin: 10px;
+        font-size: 20px;
+        border-radius: 20px;
+        z-index: 2;
     }
 }
 
@@ -94,8 +112,11 @@
     #submitMadLib  {
         grid-column: 6 / span 3;
         grid-row: 6 / span 1;
-        background-color:black;
+        background-color: gray;
         color: white;
-        font-size: 16px;
+        height: 45px;
+        margin: 10px;
+        font-size: 20px;
+        border-radius: 20px;
     }
 }
