@@ -1,0 +1,47 @@
+@media (min-width:320px){
+    .itemBContainerContact{
+        grid-column: 1 / span 7;
+        display:grid;
+        grid-template-columns: repeat(7, 1fr);
+        grid-template-rows: repeat(5, 1fr);
+    }
+
+    .contactParagraph{
+        grid-column: 1 / span 7;
+        grid-row: span 1;
+    }
+
+}
+
+@media (min-width:600px){
+    .itemBContainerContact{
+        grid-column: 1 / span 12;
+        display:grid;
+        grid-template-columns: repeat(12, 1fr);
+        grid-template-rows: repeat(5, 1fr);
+    }
+
+    .contactParagraph{
+        grid-column: 1 / span 12;
+        grid-row: span 1;
+    }
+
+
+}
+
+@media (min-width:1026px) {
+    .itemBContainerContact{
+        grid-column: 1 / span 12;
+        grid-row: span 9;
+        display:grid;
+        grid-template-columns: repeat(12, 1fr);
+        grid-template-rows: repeat(5, 50px);
+    }
+
+    .contactParagraph{
+        grid-column: 1 / span 12;
+        grid-row: span 1;
+    }
+
+}
+

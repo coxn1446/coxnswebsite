@@ -9,8 +9,14 @@ function Contact(props) {
 
 
   return (
-    <div>
-        <h1>Contact</h1>
+    <div className="itemBContainerContact">
+      <p className="contactParagraph"><strong>Cell:</strong> 207-699-8867</p>
+      <p className="contactParagraph"><strong>Work Email:</strong> william.nash@zenithmedia.com</p>
+      <p className="contactParagraph"><strong>Civilian Email:</strong> williamwildernash@gmail.com</p>
+      <p className="contactParagraph"><strong>Instagram:</strong> williamwildernash</p>
+      <p className="contactParagraph"><strong>Callsign:</strong> Shrew</p>
+      <p className="contactParagraph"><strong>AIM Screen Name:</strong> uunash007 (deprecated)</p>
+
     </div>
   );
 }

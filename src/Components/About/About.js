@@ -10,6 +10,7 @@ function About(props) {
   return (
     <div>
         <h1>About</h1>
+        <p>Coming Soon</p>
     </div>
   );
 }

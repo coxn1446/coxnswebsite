@@ -32,6 +32,8 @@
         font-weight: bolder;
         padding: 0px;
         margin: 0px;
+        font-size: 14px;
+
     
     }
 }
@@ -106,7 +108,6 @@
     grid-column: 2 / span 10;
     grid-row: 2 / span 4;
     font-weight: bolder;
-
 }
 
 }
