@@ -29,6 +29,10 @@ function Projects(props) {
         <p className="projectsParagraph">
             This version of the website is built with React Router. It is a one-page web app which doesn't make calls to the server when pages re-render. I have re-written all my old projects to work with this new format, using stuff like JSX, useEffect(), useState(), etc.
         </p>
+        <a href="https://coxnswordsearch.surge.sh/" className="projectsLink">React-Redux Word Search</a>
+        <p className="projectsParagraph">
+            Another React.js app with Redux state management. I was going to incorporate into this site, but that would have required setting up connected-router and I didn't feel like re-writing the whole site again. This app generates a random letter grid, then places random words within. The game is played by simply finding the random words in the random grid.
+        </p>
     </div>
   );
 }
